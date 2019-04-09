@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:orientation="vertical"
+    android:background="#60a3bc">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#38ada9"
+        app:titleTextColor="#fff"
+    />
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/click_search"
+        android:layout_width="590dp"
+        android:layout_height="170dp"
+        android:layout_margin="1dp">
+
+            <LinearLayout
+                android:layout_width="605dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="#c7ecee"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#487eb0" />
+
+                <LinearLayout
+                    android:layout_width="335dp"
+                    android:layout_height="108dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="★★★ SEARCH ★★★"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="① Check client location"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="② Check procedure station"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/click_setting"
+        android:layout_width="410dp"
+        android:layout_height="170dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#c7ecee">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/cerclebackgroundpink"
+                android:src="@drawable/ic_settings_black_24dp"
+                android:padding="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="-120dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="-100dp"
+                android:text="ーSETTINGー"
+                android:textSize="25dp"/>
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/lightgray"-->
+                <!--android:layout_margin="10dp"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Setup IP and Port"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@android:color/darker_gray"/>-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:layout_marginLeft="160dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/click_connect"
+            android:layout_width="410dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c7ecee"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="-80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/cerclebackgroundgreen"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_wifi_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="ーCONNECTー"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="-90dp"/>
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/lightgray"-->
+                <!--android:layout_margin="10dp"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Check connect server"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@android:color/darker_gray"/>-->
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/click_history"
+            android:layout_width="590dp"
+            android:layout_height="170dp"
+            android:layout_margin="1dp"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="590dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:background="#c7ecee"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/cerclebackgroundyello"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_history_black_24dp" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="#487eb0" />
+
+                <LinearLayout
+                    android:layout_width="348dp"
+                    android:layout_height="112dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="☆☆☆ HISTORY ☆☆☆"
+                        android:textStyle="bold"
+                        android:textSize="24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="⌚Check scan history"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold"
+                        android:textSize="22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="⌚Save log file into FTP "
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center"-->
+                <!--android:background="#c7ecee">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="64dp"-->
+                    <!--android:layout_height="64dp"-->
+                    <!--android:background="@drawable/cerclebackgroundyello"-->
+                    <!--android:src="@drawable/ic_history_black_24dp"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:layout_marginTop="10dp"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="HISTORY"/>-->
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/lightgray"-->
+                    <!--android:layout_margin="10dp"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Check history sent"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textColor="@android:color/darker_gray"/>-->
+            <!--</LinearLayout>-->
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/scan_barcode"
+            android:layout_width="1006dp"
+            android:layout_height="250dp"
+            android:layout_marginRight="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#c7ecee"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/rectanglebackground"
+                    android:padding="-20dp"
+                    android:src="@drawable/ic_barcode1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="✄ SCAN BARCODE ✄"
+                    android:textStyle="bold"
+                    android:textSize="25dp"/>
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/lightgray"-->
+                <!--android:layout_margin="1dp"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Scan data and send to SMO"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@android:color/darker_gray"/>-->
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

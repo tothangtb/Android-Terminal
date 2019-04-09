@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScanActivity"
+    android:background="#38ada9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <!--<com.journeyapps.barcodescanner.DecoratedBarcodeView-->
+        <!--android:id="@+id/barcode_scanner"-->
+        <!--android:layout_width="700dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:paddingTop="55dp"-->
+        <!--android:layout_gravity="center">-->
+        <!--</com.journeyapps.barcodescanner.DecoratedBarcodeView>-->
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:gravity="left"
+            android:paddingLeft="100dp"
+            android:paddingTop="1dp"
+            android:text="                               [™TERMINAL™]"
+            android:textColor="#1e3799"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/contentSend"
+                    android:layout_width="813dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectanglebackground_server"
+                    android:hint="Send: "
+                    android:paddingLeft="5dp"
+                    android:textSize="28dp"/>
+
+                <ImageView
+                    android:id="@+id/btnRefresh"
+                    android:layout_width="280dp"
+                    android:layout_height="94dp"
+                    android:background="@drawable/hover_button_send"
+                    android:backgroundTint="#3498db"
+                    android:src="@drawable/ic_refresh_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/btnSend"
+                    android:layout_width="270dp"
+                    android:layout_height="94dp"
+                    android:background="@drawable/hover_button_send"
+                    android:backgroundTint="#2ecc71"
+                    android:src="@drawable/ic_send_black_24dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/contentRespond"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="#dfe6e9"
+                android:hint="REC : "
+                android:textSize="30dp"
+                android:paddingLeft="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <TextView
+                    android:id="@+id/IPClient"
+                    android:layout_width="450dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="20dp"
+                    android:text="IP Terminal : 10.224.xxy.yzz"
+                    android:textColor="#1e3799"
+                    android:textStyle="bold"
+                    android:textSize="25dp"/>
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="90dp"
+                    android:background="#fff"
+                    />
+                <TextView
+                    android:id="@+id/IPServer"
+                    android:layout_width="450dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="20dp"
+                    android:text="IP Server : 10.224.xxy.yzz"
+                    android:textColor="#1e3799"
+                    android:textStyle="bold"
+                    android:textSize="25dp"/>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="90dp"
+                    android:background="#fff"
+                    />
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-30dp"
+                    android:gravity="center"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="20dp"
+                    android:text="FAIL..."
+                    android:textColor="#fa0303"
+                    android:textSize="60dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
